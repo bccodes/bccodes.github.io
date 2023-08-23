@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Jekyll Website
+title: bccodes/blog
 ---
 
 This is the main content area.
