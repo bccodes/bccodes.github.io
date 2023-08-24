@@ -1,6 +1,6 @@
 ---
 layout: post
-topics: 
+tags: 
     - kiwi
     - fruit
 ---

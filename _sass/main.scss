@@ -13,32 +13,44 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     h1 {
         font-size: 50px;
     }
+
     h2 {
         color: gray;
     }
+
     span {
         margin-top: auto;
         margin-bottom: auto;
     }
+
+    a {
+        cursor: pointer;
+        color: #eeeeee;
+        text-decoration: none;
+    }
+
     #lilpic {
         height: 64px;
         width: 64px;
         background-color: gray;
         border-radius: 100%;
     }
+
     #slash {
-        color: red;
+        color: rgb(240, 60, 10);
     }
+
     #menuicon {
         font-size: 45px;
         font-weight: lighter;
     }
 }
 
-#postview {
+#postlist {
     margin: 5vh 5vw 5vh 5vw;
     display: flex;
     gap: 1em;
@@ -47,36 +59,66 @@ body {
 
 .postcard {
     max-width: 1024px;
-
     background-color: #1c1c1c;
+    border: solid 1px #111111;
+    border-bottom: solid 2px #111111;
     border-radius: 5px;
     margin: auto;
     padding: 0.5em;
     flex-direction: column;
     box-shadow: -16px -16px 48px #00000033 inset;
 
-
     .topstuff {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         .posttitle {
             font-size: x-large;
             font-weight: bolder;
+
+            a {
+                color: #eeeeee;
+                text-decoration-color: yellow;
+                text-decoration-thickness: 3px;
+            }
+
+            a:visited {
+                text-decoration-color: rgb(255, 67, 255);
+            }
         }
+
         .date {
             font-style: italic;
-            color: #cccccc;
+            font-size: smaller;
+            color: gray;
+            cursor: default;
         }
     }
+
     .content {
-        padding-left: 0.75em;
+        padding: 0.75em;
+        padding-left: 1em;
         color: #cccccc;
+
+
     }
 
-    .topics {
+    .tags {
         color: gray;
+
+        a {
+            text-decoration-style: none;
+            text-decoration-color: transparent;
+            color: gray;
+        }
+        a:hover {
+            text-decoration-style: underline;
+            text-decoration-color: yellow;
+            text-decoration-thickness: 3px;
+        }
     }
+
 }
 
 #footer {
@@ -90,12 +132,15 @@ body {
     #topbar {
         padding-left: 5vw;
         padding-right: 5vw;
+
         h1 {
             font-size: x-large;
         }
+
         h2 {
             font-size: large;
         }
+
         #lilpic {
             width: 50px;
             height: 50px;

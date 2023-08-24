@@ -24,6 +24,11 @@ body {
   margin-top: auto;
   margin-bottom: auto;
 }
+#topbar a {
+  cursor: pointer;
+  color: #eeeeee;
+  text-decoration: none;
+}
 #topbar #lilpic {
   height: 64px;
   width: 64px;
@@ -31,14 +36,14 @@ body {
   border-radius: 100%;
 }
 #topbar #slash {
-  color: red;
+  color: rgb(240, 60, 10);
 }
 #topbar #menuicon {
   font-size: 45px;
   font-weight: lighter;
 }
 
-#postview {
+#postlist {
   margin: 5vh 5vw 5vh 5vw;
   display: flex;
   gap: 1em;
@@ -48,6 +53,8 @@ body {
 .postcard {
   max-width: 1024px;
   background-color: #1c1c1c;
+  border: solid 1px #111111;
+  border-bottom: solid 2px #111111;
   border-radius: 5px;
   margin: auto;
   padding: 0.5em;
@@ -63,16 +70,37 @@ body {
   font-size: x-large;
   font-weight: bolder;
 }
+.postcard .topstuff .posttitle a {
+  color: #eeeeee;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 3px;
+}
+.postcard .topstuff .posttitle a:visited {
+  text-decoration-color: rgb(255, 67, 255);
+}
 .postcard .topstuff .date {
   font-style: italic;
-  color: #cccccc;
+  font-size: smaller;
+  color: gray;
+  cursor: default;
 }
 .postcard .content {
-  padding-left: 0.75em;
+  padding: 0.75em;
+  padding-left: 1em;
   color: #cccccc;
 }
-.postcard .topics {
+.postcard .tags {
   color: gray;
+}
+.postcard .tags a {
+  text-decoration-style: none;
+  text-decoration-color: transparent;
+  color: gray;
+}
+.postcard .tags a:hover {
+  text-decoration-style: underline;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 3px;
 }
 
 #footer {

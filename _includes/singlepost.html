@@ -1,0 +1,13 @@
+<div class="postcard">
+  <span class="topstuff">
+    <span class="posttitle"><a href="{{ page.url }}">{{ page.title }}</a></span>
+    <span class="date">{{ page.date | date_to_string}}</span>
+  </span>
+  <div class="content">{{ page.content }}</div>
+  <div class="tags">
+    Tags:
+    {% for tag in page.tags %}
+    <a class="tagLinks" href=""{{ site.baseurl }}/tags/{{ tag | slugify }}"">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</div>
