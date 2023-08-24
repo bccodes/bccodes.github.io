@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../_sass/styles.scss">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
     <title>{{ page.title }}</title>
 </head>
+
 <body>
-    <header class="header">
-        <h1>{{ page.title }}</h1>
-    </header>
-    <main class="content">
-        {{ content }}
-    </main>
-    <footer class="footer">
-        Benjamin Worth 2023
+    <div id="topbar">
+        {% include topbar.html %}
+    </div>
+    <hr />
+    <div id="postview">
+        {% include postview.html %}
+    </div>
+    <div id="footer">
+        © 2023 Benjamin Worth
+    </div>
 </body>
+
 </html>
