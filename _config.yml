@@ -1,2 +1,3 @@
-collections:
-  tags:
+baseurl: /PROJECT
+root: /
+url: http://bccodes.github.io/jekyll_site/
