@@ -148,8 +148,9 @@ body {
 .postcard .content img {
   display: flex;
   margin: auto;
-  max-width: 90%;
+  max-width: 95%;
   height: auto;
+  padding: 4px;
 }
 .postcard .tags {
   color: gray;

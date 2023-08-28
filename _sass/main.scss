@@ -21,7 +21,6 @@ body {
         padding-top: 20px;
         color: white;
         transition-duration: 0.2s;
-
     }
 
     h2 {
@@ -96,7 +95,6 @@ body {
         text-underline-offset: 8px;
         text-shadow: 0 0 48px #ff0000;
         transition-duration: 0.2s;
-
     }
 
     #ig-icon:hover {
@@ -104,7 +102,6 @@ body {
         text-underline-offset: 8px;
         text-shadow: 0 0 48px #ff4fe2;
         transition-duration: 0.2s;
-
     }
 
     #sc-icon:hover {
@@ -112,7 +109,6 @@ body {
         text-underline-offset: 8px;
         text-shadow: 0 0 48px #ff8a2b;
         transition-duration: 0.2s;
-
     }
 }
 
@@ -175,8 +171,9 @@ body {
         img {
             display: flex;
             margin: auto;
-            max-width: 90%;
+            max-width: 95%;
             height: auto;
+            padding: 4px;
         }
     }
 
@@ -210,12 +207,10 @@ body {
 }
 
 @media only screen and (max-width: 575px) {
-
     #postlist {
         margin-left: 0px;
         margin-right: 15px;
     }
-
 }
 
 @media only screen and (max-width: 640px) {
