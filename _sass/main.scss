@@ -44,9 +44,40 @@ body {
         color: rgb(240, 60, 10);
     }
 
+    #dot {
+        text-shadow: 2px 0 0 black;
+    }
+
+    #dot:hover {
+        color: turquoise;
+    }
+
+    #dot:hover:before {
+        margin-left: 12px;
+        content: "";
+    }
+
     #menuicon {
         font-size: 45px;
         font-weight: lighter;
+    }
+
+    #gh-icon:hover {
+        text-decoration: underline 4px red;
+        text-underline-offset: 8px;
+        text-shadow: 0 0 48px #ff0000;
+    }
+
+    #ig-icon:hover {
+        text-decoration: underline 4px #ff4fe2;
+        text-underline-offset: 8px;
+        text-shadow: 0 0 48px #ff4fe2;
+    }
+
+    #sc-icon:hover {
+        text-decoration: underline 4px #ff8a2b;
+        text-underline-offset: 8px;
+        text-shadow: 0 0 48px #ff8a2b;
     }
 }
 
@@ -59,6 +90,7 @@ body {
 
 .postcard {
     max-width: 1024px;
+    width: 100%;
     background-color: #1c1c1c;
     border: solid 1px #111111;
     border-bottom: solid 2px #111111;
@@ -84,7 +116,7 @@ body {
             }
 
             a:visited {
-                text-decoration-color: rgb(255, 67, 255);
+                text-decoration-color: gold;
             }
         }
 
@@ -93,6 +125,10 @@ body {
             font-size: smaller;
             color: gray;
             cursor: default;
+        }
+
+        .date:hover {
+            color: yellowgreen;
         }
     }
 
@@ -112,6 +148,7 @@ body {
             text-decoration-color: transparent;
             color: gray;
         }
+
         a:hover {
             text-decoration-style: underline;
             text-decoration-color: yellow;
@@ -119,6 +156,11 @@ body {
         }
     }
 
+    .tags:hover {
+        text-decoration-style: underline;
+        text-decoration-color: yellow;
+        text-decoration-thickness: 3px;
+    }
 }
 
 #footer {
