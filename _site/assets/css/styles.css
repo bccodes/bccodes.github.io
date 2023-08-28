@@ -19,7 +19,7 @@ body {
   font-size: 50px;
   padding-top: 20px;
   color: white;
-  transition-duration: 3.2s;
+  transition-duration: 0.2s;
 }
 #topbar h2 {
   color: gray;
@@ -38,7 +38,7 @@ body {
 #topbar #underline {
   text-decoration: underline 8px rgba(128, 128, 128, 0);
   text-underline-offset: 6px;
-  transition-duration: 3.2s;
+  transition-duration: 0.2s;
 }
 #topbar h1:hover #underline {
   text-decoration: underline 8px rgba(128, 128, 128, 0.6);
@@ -53,11 +53,11 @@ body {
 }
 #topbar #slash {
   color: rgb(240, 60, 10);
-  transition-duration: 10s;
+  transition-duration: 0.2s;
 }
 #topbar h1:hover #slash {
   color: rgb(255, 85, 45);
-  transition-duration: 0s;
+  transition-duration: 0.2s;
 }
 #topbar #dot {
   font-style: normal;
@@ -70,7 +70,6 @@ body {
 #topbar #menuicon {
   font-size: 45px;
   font-weight: lighter;
-  white-space: nowrap;
 }
 #topbar #gh-icon,
 #topbar #ig-icon,
@@ -195,8 +194,20 @@ body {
     font-size: large;
   }
   #topbar #lilpic {
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
+  }
+  #topbar #menuicon {
+    width: 25px;
+  }
+  #topbar #menuicon,
+  #topbar #gh-icon,
+  #topbar #ig-icon,
+  #topbar #sc-icon {
+    font-size: 25px;
+  }
+  #topbar i {
+    margin-top: 8px;
   }
 }
 
