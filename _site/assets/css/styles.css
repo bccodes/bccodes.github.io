@@ -9,16 +9,22 @@ body {
 
 #topbar {
   cursor: default;
-  padding: 1ex 10vw 1ex 10vw;
+  padding: 1ex 5vw 1ex 5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-shadow: 2px 2px black;
 }
 #topbar h1 {
   font-size: 50px;
+  padding-top: 20px;
+  color: white;
+  transition-duration: 3.2s;
 }
 #topbar h2 {
   color: gray;
+  margin-top: -1ex;
+  font-style: italic;
 }
 #topbar span {
   margin-top: auto;
@@ -29,19 +35,32 @@ body {
   color: #eeeeee;
   text-decoration: none;
 }
+#topbar #underline {
+  text-decoration: underline 8px rgba(128, 128, 128, 0);
+  text-underline-offset: 6px;
+  transition-duration: 3.2s;
+}
+#topbar h1:hover #underline {
+  text-decoration: underline 8px rgba(128, 128, 128, 0.6);
+  transition-duration: 0.2s;
+}
 #topbar #lilpic {
   height: 64px;
   width: 64px;
   background-color: gray;
   border-radius: 100%;
+  box-shadow: 0px 0px 0px 2px black;
 }
 #topbar #slash {
   color: rgb(240, 60, 10);
+  transition-duration: 10s;
+}
+#topbar h1:hover #slash {
+  color: rgb(255, 85, 45);
+  transition-duration: 0s;
 }
 #topbar #dot {
-  text-shadow: 2px 0 0 black;
-}
-#topbar #dot:hover {
+  font-style: normal;
   color: turquoise;
 }
 #topbar #dot:hover:before {
@@ -51,25 +70,34 @@ body {
 #topbar #menuicon {
   font-size: 45px;
   font-weight: lighter;
+  white-space: nowrap;
+}
+#topbar #gh-icon,
+#topbar #ig-icon,
+#topbar #sc-icon {
+  text-decoration: underline 4px rgba(0, 0, 0, 0);
 }
 #topbar #gh-icon:hover {
   text-decoration: underline 4px red;
   text-underline-offset: 8px;
   text-shadow: 0 0 48px #ff0000;
+  transition-duration: 0.2s;
 }
 #topbar #ig-icon:hover {
   text-decoration: underline 4px #ff4fe2;
   text-underline-offset: 8px;
   text-shadow: 0 0 48px #ff4fe2;
+  transition-duration: 0.2s;
 }
 #topbar #sc-icon:hover {
   text-decoration: underline 4px #ff8a2b;
   text-underline-offset: 8px;
   text-shadow: 0 0 48px #ff8a2b;
+  transition-duration: 0.2s;
 }
 
 #postlist {
-  margin: 5vh 5vw 5vh 5vw;
+  margin: 1em 5vw 1em 5vw;
   display: flex;
   gap: 1em;
   flex-direction: column;
@@ -83,7 +111,7 @@ body {
   border-bottom: solid 2px #111111;
   border-radius: 5px;
   margin: auto;
-  padding: 0.5em;
+  padding: 1em;
   flex-direction: column;
   box-shadow: -16px -16px 48px rgba(0, 0, 0, 0.2) inset;
 }
@@ -118,6 +146,12 @@ body {
   padding-left: 1em;
   color: #cccccc;
 }
+.postcard .content img {
+  display: flex;
+  margin: auto;
+  max-width: 90%;
+  height: auto;
+}
 .postcard .tags {
   color: gray;
 }
@@ -140,10 +174,16 @@ body {
 #footer {
   color: gray;
   text-align: center;
-  padding-bottom: 4px;
+  padding-bottom: 1ex;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575px) {
+  #postlist {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 640px) {
   #topbar {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -157,10 +197,6 @@ body {
   #topbar #lilpic {
     width: 50px;
     height: 50px;
-  }
-  #postview {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
