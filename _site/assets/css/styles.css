@@ -98,11 +98,11 @@ body {
 }
 .postcard .topstuff .posttitle a {
   color: #eeeeee;
-  text-decoration-color: yellow;
+  text-decoration-color: rgb(255, 235, 0);
   text-decoration-thickness: 3px;
 }
 .postcard .topstuff .posttitle a:visited {
-  text-decoration-color: gold;
+  text-decoration-color: rgb(255, 235, 0);
 }
 .postcard .topstuff .date {
   font-style: italic;
