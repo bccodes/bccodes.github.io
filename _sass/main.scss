@@ -20,7 +20,7 @@ body {
         font-size: 50px;
         padding-top: 20px;
         color: white;
-        transition-duration: 3.2s;
+        transition-duration: 0.2s;
 
     }
 
@@ -44,7 +44,7 @@ body {
     #underline {
         text-decoration: underline 8px rgba(128, 128, 128, 0);
         text-underline-offset: 6px;
-        transition-duration: 3.2s;
+        transition-duration: 0.2s;
     }
 
     h1:hover #underline {
@@ -62,12 +62,12 @@ body {
 
     #slash {
         color: rgb(240, 60, 10);
-        transition-duration: 10s;
+        transition-duration: 0.2s;
     }
 
     h1:hover #slash {
         color: rgb(255, 85, 45);
-        transition-duration: 0.0s;
+        transition-duration: 0.2s;
     }
 
     #dot {
