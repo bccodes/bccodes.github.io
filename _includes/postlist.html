@@ -1,7 +1,7 @@
 {% for post in site.posts %}
 <div class="postcard" id="{{ post.title }}">
     <span class="topstuff">
-        <span class="posttitle"><a href="{{ site.url }}/#{{ post.title }}">{{ post.title }}</a></span>
+        <span class="posttitle"><a href="{{ site.url }}/jekyll_site/#{{ post.title }}">{{ post.title }}</a></span>
         <span class="date">{{ post.date | date_to_string}}</span>
     </span>
     <div class="content">{{ post.content }}</div>
