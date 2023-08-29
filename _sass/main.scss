@@ -209,11 +209,17 @@ body {
 
 @media only screen and (max-width: 575px) {
     #postlist {
-        margin-left: 0px;
+        margin-left: 0;
+    }
+
+    .postcard {
+        max-width: calc(100% - 2em); /* Adjusted to account for padding */
+        width: 100%; /* Full width on smaller screens */
+        margin: 0 auto; /* Center postcards */
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
     #topbar {
         padding-left: 5vw;
         padding-right: 5vw;
@@ -244,19 +250,16 @@ body {
 
         i {
             margin-top: 8px;
-        }
-
-        .postcard {
-        max-width: calc(100% - 2em); /* Adjusted to account for padding */
-        width: 100%; /* Full width on smaller screens */
-        /* ... other .postcard styles ... */
+        }        
     }
 
-        
+    #postlist {
+        margin-left: 20px; /* Adjust margin as needed */
     }
 
     .postcard {
-        max-width: calc(100% - 2em); /* Adjusted to account for padding */
-        width: 100%; /* Full width on smaller screens */
+        max-width: 1024px; /* Limit postcard width */
+        width: calc(100% - 2em); /* Adjusted to account for padding */
+        margin: 0 auto; /* Center postcards */
     }
 }
