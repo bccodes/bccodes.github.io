@@ -210,6 +210,8 @@ body {
 @media only screen and (max-width: 575px) {
     #postlist {
         margin-left: 0;
+        padding: 1em 2vw 1em 2vw;
+
     }
 
     .postcard {
@@ -219,8 +221,8 @@ body {
     }
 
     #topbar {
-        padding-left: 2vw;
-        padding-right: 2vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
 
         h1 {
             font-size: x-large;
