@@ -219,7 +219,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 1024px) {
+@media only screen and (max-width: 960px) {
     #topbar {
         padding-left: 5vw;
         padding-right: 5vw;
@@ -252,7 +252,9 @@ body {
             margin-top: 8px;
         }        
     }
+}
 
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
     #postlist {
         margin-left: 20px; /* Adjust margin as needed */
     }
