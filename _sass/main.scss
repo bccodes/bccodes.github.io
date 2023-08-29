@@ -245,6 +245,14 @@ body {
         i {
             margin-top: 8px;
         }
+
+        .postcard {
+        max-width: calc(100% - 2em); /* Adjusted to account for padding */
+        width: 100%; /* Full width on smaller screens */
+        /* ... other .postcard styles ... */
+    }
+
+        
     }
 
     .postcard {
