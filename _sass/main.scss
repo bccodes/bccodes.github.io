@@ -9,7 +9,7 @@ body {
 
 #topbar {
     cursor: default;
-    padding: 1ex 3vw 1ex 3vw;
+    padding: 1ex 5vw 1ex 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -219,8 +219,8 @@ body {
     }
 
     #topbar {
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
 
         h1 {
             font-size: x-large;
@@ -262,12 +262,15 @@ body {
         width: calc(100% - 2em); /* Adjusted to account for padding */
         margin: 0 auto; /* Center postcards */
     }
-
-    h1 {
+     #topbar {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        h1 {
             font-size: xx-large;
         }
 
         h2 {
             font-size: x-large;
         }
+    }
 }
