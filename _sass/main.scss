@@ -215,7 +215,6 @@ body {
     }
 
     .postcard {
-        max-width: calc(100% - 2em); /* Adjusted to account for padding */
         width: 100%; /* Full width on smaller screens */
         margin: 0 auto; /* Center postcards */
     }
