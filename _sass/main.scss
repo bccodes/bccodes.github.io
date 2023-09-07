@@ -8,6 +8,7 @@ body {
 }
 
 .popup {
+    cursor: default;
     position: fixed;
     top: 0;
     left: 0;
@@ -165,12 +166,14 @@ body {
 }
 
 .postcard {
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    backdrop-filter: blur(10px) saturate(180%);
     max-width: 1024px;
     width: calc(100% - 2em);
     /* Adjusted to account for padding */
-    background-color: #1c1c1c;
-    border: solid 1px #111111;
-    border-bottom: solid 2px #111111;
+    background-color: #1c1c1c77;
+    border: solid 1px #11111177;
+    border-bottom: solid 2px #11111177;
     border-radius: 5px;
     margin: auto;
     padding: 1em;
