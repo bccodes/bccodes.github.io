@@ -29,10 +29,14 @@ body {
     max-width: 90%;
     max-height: 90%;
     border-radius: 4px;
+    cursor: zoom-out;
 }
 
 .popup img:hover .close-btn {
-    color: orange;
+    text-decoration: underline 4px orange;
+    text-underline-offset: 8px;
+    text-shadow: 0 0 48px orange;
+    transition-duration: 0.2s;
 }
 
 .popup:target {
@@ -48,6 +52,8 @@ body {
     font-size: 30px;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
+    
 }
 
 #topbar {
