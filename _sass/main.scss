@@ -22,7 +22,7 @@ body {
     visibility: hidden;
     transition: opacity 0.2s, visibility 0s linear 0.2s;
     z-index: 2;
-    
+
 }
 
 .popup img {
@@ -119,12 +119,11 @@ body {
     #dot {
         font-style: normal;
         color: turquoise;
-        transition: margin-left 0.4s;
+        transition: transform 0.2s ease-in-out;
     }
 
-    #dot:hover:before {
-        margin-left: 12px;
-        content: "";
+    #dot:hover {
+        transform: translateX(12px);
     }
 
     #menuicon {
