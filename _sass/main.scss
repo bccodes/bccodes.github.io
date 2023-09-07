@@ -112,6 +112,7 @@ body {
     #dot {
         font-style: normal;
         color: turquoise;
+        transition-duration: 0.2s;
     }
 
     #dot:hover:before {
