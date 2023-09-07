@@ -22,11 +22,16 @@ body {
     visibility: hidden;
     transition: opacity 0.2s, visibility 0s linear 0.2s;
     z-index: 2;
+    
 }
 
 .popup img {
     max-width: 90%;
     max-height: 90%;
+}
+
+.popup:hover .close-btn {
+    color: orange;
 }
 
 .popup:target {
