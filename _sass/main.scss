@@ -205,11 +205,13 @@ body {
             font-size: smaller;
             color: gray;
             cursor: default;
+            color: yellowgreen;
         }
 
         .date:hover {
-            color: yellowgreen;
+            text-shadow: 0 0 24px gray;
         }
+
     }
 
     .content {
@@ -223,6 +225,18 @@ body {
             max-width: 95%;
             height: auto;
             padding: 4px;
+        }
+
+        header {
+            color: skyblue;
+        }
+
+        h1 {
+            color: rgb(255, 164, 111);
+        }
+
+        p {
+            padding: 1ex;
         }
     }
 
