@@ -63,6 +63,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     text-shadow: 2px 2px black;
+    transition: transform 0.2s ease-in-out;
 
     h1 {
         font-size: 50px;
@@ -126,8 +127,6 @@ body {
     #dot {
         font-style: normal;
         color: turquoise;
-        display: inline-block;
-        transition: transform 0.2s ease-in-out;
     }
 
     #dot:hover {
