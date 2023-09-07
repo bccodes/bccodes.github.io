@@ -226,12 +226,16 @@ body {
             padding: 4px;
         }
 
-        header {
+        h2 {
             text-decoration: underline 3px skyblue;
+            cursor: default;
+
         }
 
         h1 {
             text-decoration: underline 3px rgb(255, 164, 111);
+            cursor: default;
+
         }
 
         p {
