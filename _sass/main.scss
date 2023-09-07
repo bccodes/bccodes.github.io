@@ -28,9 +28,10 @@ body {
 .popup img {
     max-width: 90%;
     max-height: 90%;
+    border-radius: 4px;
 }
 
-.popup:hover .close-btn {
+.popup img:hover .close-btn {
     color: orange;
 }
 
@@ -119,6 +120,7 @@ body {
     #dot {
         font-style: normal;
         color: turquoise;
+        display: inline-block;
         transition: transform 0.2s ease-in-out;
     }
 
