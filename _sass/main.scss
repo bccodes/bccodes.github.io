@@ -91,13 +91,13 @@ body {
         width: 64px;
         background-color: gray;
         border-radius: 100%;
-        box-shadow: 0 0 48px #ffffff;
+        cursor: zoom-in;
         transition: transform 0.2s;
     }
 
     #lilpic:hover {
         transform: scale(1.05);
-        box-shadow: 0 0 48px #ff0000;
+        box-shadow: 0 0 24px black;
     }
 
     #slash {
@@ -113,7 +113,7 @@ body {
     #dot {
         font-style: normal;
         color: turquoise;
-        transition-duration: 0.2s;
+        transition: margin-left 0.4s;
     }
 
     #dot:hover:before {
